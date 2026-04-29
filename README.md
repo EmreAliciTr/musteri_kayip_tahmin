@@ -1,1 +1,0 @@
-# musteri_kayip_tahmin

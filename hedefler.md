@@ -1,0 +1,6 @@
+Müşteri Kayıp Tahmini Senaryo: Yeni bir müşteri kazanmak, mevcut müşteriyi elde tutmaktan çok daha pahalıdır. Eğer bizi terk edecek (uygulamayı silecek veya bir daha alışveriş yapmayacak) müşterileri önceden tespit edebilirsek, onlara özel kampanyalarla geri kazanabiliriz.
+İstenen: E-Ticaret sitesi müşterilerin demografik bilgilerini, kullanım alışkanlıklarını veya alışveriş geçmişini barındıran bir veri seti bulunması ve bu veriler üzerinden Random Forest, Logistic Regression veya LightGBM gibi bir Sınıflandırma (Classification) modeli kurarak "Hangi müşterilerin bizi terk etme ihtimali yüksek?" sorusuna yanıt bulunması.
+Değerlendirme kriterleri:
+Özellik Mühendisliği (Feature Engineering): Sadece var olan veriyi kullanmak yerine, modelin işini kolaylaştıracak yeni anlamlı değişkenler (Örn: "Son 30 gündeki harcama değişimi") üretebilme
+Model Eğitimi ve Denge: Kaybedilen müşteri sayısı genellikle azınlıktadır (Imbalanced Data). Bu dengesizliğin (örneğin SMOTE kullanarak) yönetimi ve modelin eğitimi
+Metrik Okuryazarlığı: Bu tarz problemlerde sadece doğruluğa (Accuracy) bakmak yanıltıcıdır. Precision, Recall, F1-Score ve Confusion Matrix gibi metrikleri kullanarak modelini nasıl yorumladığının göstermelisin
